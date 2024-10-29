@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:WpfApp4"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel LastChildFill="False">
+        <Menu Height="25" DockPanel.Dock="Top">
+            <MenuItem Height="25" Header="檔案" VerticalAlignment="Center" >
+                <MenuItem Header="新增畫布"/>
+                <MenuItem Header="開啟檔案"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Height="40" VerticalAlignment="Top">
+            <ToolBar Height="38"  Background="Gray" Margin="0,1,0,-1">
+                <Label Content="筆刷色彩" FontSize="14" VerticalAlignment="Center"/>
+            </ToolBar>
+        </ToolBarTray>
+    </DockPanel>
 
-    </Grid>
 </Window>
